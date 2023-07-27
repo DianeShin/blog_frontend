@@ -1,0 +1,15 @@
+body{
+    margin-left : auto;
+    margin-right: auto;
+}
+
+#homeTitle{
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+#text{
+    text-align: center;
+    color: white;
+}

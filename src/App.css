@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #2F2F2F;
+    display: flex;
+    justify-content: space-between;
+}
+
+#userNameP{
+    width: 20%;
+    color: white;
+    font-size: 20px;
+    height : 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body {
+    background-color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    background-color: dimgrey;
+    width : 100%;
+    position : fixed;
+    bottom: 0;
+    padding : 10px;
+    line-height: 27px
+}
+
+.emailButton{
+    font-size: 16px;
+    background-color: dimgrey;
+}

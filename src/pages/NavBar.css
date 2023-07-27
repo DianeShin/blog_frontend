@@ -1,0 +1,20 @@
+.navBarLink:link, .navBarLink:visited {
+    background-color: black;
+    color : white;
+    padding-left : 50px;
+    padding-right : 50px;
+    font-size : 25px;
+    text-decoration: none;
+}
+
+.navBarLink:hover {
+    background-color: white;
+    color : black;
+    transition: background-color .3s ease-in;
+}
+
+.navigationBar {
+    background-color : black;
+    height : 30px;
+    left : 0;
+}

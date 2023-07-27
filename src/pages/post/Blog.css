@@ -1,0 +1,35 @@
+.blogDiv{
+    background-color: white;
+    padding : 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px dotted black;
+}
+
+#blogTitle{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.postContent{
+    margin: 5px;
+}
+.author{
+    font-size: 13px;
+}
+
+.postLink{
+    color: black;
+    text-decoration: none;
+}
+
+.postLink:hover{
+    color:dimgrey;
+}
+
+#no-post-h{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}

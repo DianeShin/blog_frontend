@@ -1,0 +1,32 @@
+#textEditor{
+    text-align: center;
+    padding-bottom: 100px;
+}
+#textEditorTitle{
+    padding: 20px;
+    color: white;
+}
+#textEditorArea{
+    background-color: black;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+#titleText{
+    margin-top: 25px;
+    width: 400px;
+}
+#textEditorText{
+    width: 650px;
+    margin: 25px;
+    height: 400px;
+}
+#textEditorTools{
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+
+

@@ -1,0 +1,13 @@
+.postDiv{
+    margin : 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.postTitle{
+    text-align: center;
+}
+
+.postAuthor{
+    text-align: right;
+}
