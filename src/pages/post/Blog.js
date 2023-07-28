@@ -60,9 +60,14 @@ function Blog() {
             {blogPosts && blogPosts.reverse().map((post) => (
                 <div className="blogDiv" key={post.id}>
                     <Link className="postLink" to={post.title + "/" + post.postId}><h2 className="postTitle">{post.title}</h2></Link>
-                <p className="postContent">{post.content}</p>
-                    <p className="author">By : {post.userName}</p>
-                    { userId === post.userId && <button onClick={() => handleDelete(post.postId)}>Delete Post</button>}
+                    <p className="postContent">{post.content}</p>
+                    <div className="rightAlignedDiv">
+                        <p className="author">By : {post.userName}</p>
+                    </div>
+
+                    <div className="rightAlignedDiv">
+                        { userId === post.userId && <button className="deleteButton" onClick={() => handleDelete(post.postId)}>Delete Post</button>}
+                    </div>
                 </div>
             ))}
             {blogPosts.length === 0 &&

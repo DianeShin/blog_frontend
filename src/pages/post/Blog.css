@@ -17,6 +17,7 @@
 }
 .author{
     font-size: 13px;
+    display: block;
 }
 
 .postLink{
@@ -32,4 +33,14 @@
     color: white;
     text-align: center;
     padding: 50px;
+}
+
+.rightAlignedDiv{
+    display: flex;
+    justify-content: right;
+}
+
+.deleteButton{
+    display: block;
+    margin-top: 5px;
 }
