@@ -4,6 +4,7 @@ import {AuthContext} from "../auth/Authenticator";
 import {Link} from "react-router-dom";
 import {getUserById} from "../auth/userHelper";
 function Blog() {
+    const [originalPosts, setOriginalPosts] = useState([]);
     const [blogPosts, setBlogPosts] = useState([]);
     const {userId} = useContext(AuthContext);
 
@@ -26,6 +27,7 @@ function Blog() {
                 // Wait for all promises to be resolved before updating the state
                 Promise.all(getUserPromises).then(() => {
                     setBlogPosts(posts);
+                    setOriginalPosts(posts);
                 });
             })
             .catch((error) => {});
@@ -54,9 +56,17 @@ function Blog() {
         .catch((error) => alert("Something didn't go right."))
     }
 
+    function handleChange(){
+        const searchTextArea = document.getElementById("searchTextArea");
+        setBlogPosts(originalPosts);
+        setBlogPosts((prevPosts) => prevPosts.filter((post) => post.content.includes(searchTextArea.value)))
+    }
     return(
         <>
             <h2 id="blogTitle">Blog Posts</h2>
+            <div id="searchTab">
+                <textarea id="searchTextArea" placeholder="Search..." onChange={handleChange}/>
+            </div>
             {blogPosts && blogPosts.reverse().map((post) => (
                 <div className="blogDiv" key={post.id}>
                     <Link className="postLink" to={post.title + "/" + post.postId}><h2 className="postTitle">{post.title}</h2></Link>

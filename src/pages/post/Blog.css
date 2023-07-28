@@ -44,3 +44,14 @@
     display: block;
     margin-top: 5px;
 }
+
+#searchTab{
+    margin-right: 20px;
+    text-align: right;
+}
+
+#searchTextArea{
+    color: white;
+    background-color: #2F2F2F;
+    resize: none;
+}
