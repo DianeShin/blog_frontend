@@ -1,0 +1,43 @@
+#commentDiv{
+    margin-top: 100px;
+}
+
+#commentPostDiv{
+    margin : 20px;
+    padding : 20px;
+    outline : dashed 1px black;
+}
+
+#nextLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+#commentTitleText {
+    margin-top : auto;
+    margin-bottom: auto;
+    height: 20px;
+    resize: none;
+}
+
+#commentContentText{
+    margin-top : 10px;
+    height : 60px;
+    width: 80%;
+    resize: none;
+}
+
+#commentPostButton{
+    color: white;
+    background-color: black;
+    border: none;
+    margin-top : auto;
+    margin-bottom: auto;
+    width: 120px;
+    height : 30px;
+}
+
+#commentPostButton:hover{
+    background-color: grey;
+    transition: background-color .09s ease-in;
+}

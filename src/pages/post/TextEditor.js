@@ -65,10 +65,6 @@ const TextEditor = () => {
                         <option value = "16px">16pt</option>
                         <option value = "20px">20pt</option>
                     </select>
-                    <select>
-                        <option value = "dottedList">dotted list</option>
-                        <option value = "numberedList">numbered list</option>
-                    </select>
                     <button id = "charCountButton">0 Characters</button>
                 </div>
                 <textarea id = "titleText" placeholder="Title"></textarea>

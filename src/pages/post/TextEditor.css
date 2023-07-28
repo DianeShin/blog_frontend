@@ -16,11 +16,13 @@
 #titleText{
     margin-top: 25px;
     width: 400px;
+    resize: none;
 }
 #textEditorText{
     width: 650px;
     margin: 25px;
     height: 400px;
+    resize: none;
 }
 #textEditorTools{
     width: 100%;
